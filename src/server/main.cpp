@@ -27,6 +27,14 @@ int main(int argc, char ** argv){
     // 绑定ip和端口
     EventLoop loop;
 
+    InetAddress addr(ip, port);
+    ChatServer server(&loop, addr, "ChatServer");
+
+    server.start();
+    loop.loop();
+
+    return 0;
+
 }
 
 
