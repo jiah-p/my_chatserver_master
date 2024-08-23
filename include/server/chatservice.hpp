@@ -80,6 +80,8 @@ private:
     FriendModel _friendmodel;   // 好友类的操作接口
  
     GroupModel _groupmodel; // 群组类的操作接口
+ 
+    Redis _redis;    // redis 对象
 };
 
 
