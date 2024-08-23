@@ -20,6 +20,7 @@
 #include "offlinemessagemodel.hpp"
 #include "friendmodel.hpp"
 #include "groupmodel.hpp"
+#include "redis.hpp"
 
 using json = nlohmann::json;
 using namespace muduo;
