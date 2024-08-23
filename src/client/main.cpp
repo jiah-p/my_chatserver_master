@@ -369,7 +369,7 @@ void readTaskHandler(int clientfd)
 void showCurrentUserData()
 {
     cout << "**********************login user**********************" << endl;
-    cout << "current login user => id:" << g_currentUser.getId() << " name:" << g_currentUser.getname() << endl;
+    cout << "current login user => id:" << g_currentUser.getid() << " name:" << g_currentUser.getname() << endl;
     cout << "----------------------friend list---------------------" << endl;
     // 显示好友信息
     if (!g_currentUserFriendList.empty())
@@ -386,7 +386,7 @@ void showCurrentUserData()
         for (Group &group : g_currentUserGroupList)
         {
             cout << group.getid() << " " << group.getname() << " " << group.getdesc() << endl;
-            for (GroupUser &user : group.getUsers())
+            for (GroupUser &user : group.getusers())
             {
                 cout << user.getid() << " " << user.getname() << " " << user.getstate()
                      << " " << user.getrole() << endl;
