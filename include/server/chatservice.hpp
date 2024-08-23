@@ -27,7 +27,7 @@ using namespace muduo;
 using namespace muduo::net;
 using namespace std;
 
-// 通过using 取别名
+
 using MsgHandler = std::function<void(const TcpConnectionPtr & conn, json& js, Timestamp time)>;  // 通过 function 实现统一接口
 // 聊天服务器的业务模块
 class ChatService{
